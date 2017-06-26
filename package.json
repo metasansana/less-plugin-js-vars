@@ -1,0 +1,26 @@
+{
+  "name": "less-plugin-js-vars",
+  "version": "1.0.0",
+  "description": "A less css plugin that let's use js vars all over the place.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metasansana/less-plugin-js-vars.git"
+  },
+  "keywords": [
+    "less",
+    "lessc",
+    "css",
+    "javascript",
+    "interpolation"
+  ],
+  "author": "Lasana Murray <dev@quenk.com> (http://quenk.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/metasansana/less-plugin-js-vars/issues"
+  },
+  "homepage": "https://github.com/metasansana/less-plugin-js-vars#readme"
+}
