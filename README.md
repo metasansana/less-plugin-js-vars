@@ -17,3 +17,41 @@ npm install --save-dev less-plugin-js-vars
 lessc file.less --js-vars="vars.js"
 
 ```
+
+In the above, the file vars.js must export an object with key value pairs.
+Inside your less files all occurences of {{variable}} will be replaced with the value
+of the 'variable' property on the exported object.
+
+vars.js:
+
+```js
+
+module.exports = {
+
+   fruit: 'mango'
+
+};
+
+```
+
+file.less:
+```less
+
+.{{fruit}} {
+
+   color: red;
+
+}
+
+```
+
+result:
+```css
+
+.mango {
+
+  color: red;
+
+}
+
+```
