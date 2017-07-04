@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/metasansana/less-plugin-js-vars/issues"
   },
-  "homepage": "https://github.com/metasansana/less-plugin-js-vars#readme"
+  "homepage": "https://github.com/metasansana/less-plugin-js-vars#readme",
+  "dependencies": {
+    "@quenk/polate": "^1.0.0"
+  }
 }
