@@ -11,7 +11,12 @@ VariablePreProcessor.prototype = {
 
     process: function(src, data) {
 
-        return polate(src, this.context, { start: '__', end: '__' });
+        return polate(src, this.context, {
+            start: '__',
+            end: '__',
+            regex: '([\\w]+)',
+            leaveMissing: true
+        });
 
     }
 
