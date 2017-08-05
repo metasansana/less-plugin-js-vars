@@ -34,7 +34,19 @@ JSVarsPlugin.prototype = {
     install: function(less, pluginManager) {
 
         pluginManager.addPreProcessor(new VariablePreProcessor(
-            require(require.resolve(path.join(process.cwd(), this.options.filename)))));
+            Object.assign.apply(Object, [{}].concat(this.options.filename.split(',')
+                .map(function map_paths(p) {
+
+                    var o = require(require.resolve(path.join(process.cwd(), p.trim())));
+
+                    if (typeof o !== 'object') {
+                        console.warn('js-vars: "' + p + '" does not export an object, it will be ignored!');
+                        return {};
+                    }
+
+                    return o;
+
+                })))));
 
     },
 
