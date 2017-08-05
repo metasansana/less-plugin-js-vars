@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/metasansana/less-plugin-js-vars#readme",
   "dependencies": {
-    "@quenk/polate": "^1.1.4"
+    "@quenk/polate": "^1.1.5"
   }
 }
