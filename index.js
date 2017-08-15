@@ -37,7 +37,9 @@ JSVarsPlugin.prototype = {
             Object.assign.apply(Object, [{}].concat(this.options.filename.split(',')
                 .map(function map_paths(p) {
 
-                    var o = require(require.resolve(path.join(process.cwd(), p.trim())));
+                    var o = require(path.isAbolute(p) ?
+                        p :
+                        require.resolve(path.join(process.cwd(), p.trim())));
 
                     if (typeof o !== 'object') {
                         console.warn('js-vars: "' + p + '" does not export an object, it will be ignored!');
