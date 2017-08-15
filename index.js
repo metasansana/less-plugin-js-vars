@@ -37,7 +37,7 @@ JSVarsPlugin.prototype = {
             Object.assign.apply(Object, [{}].concat(this.options.filename.split(',')
                 .map(function map_paths(p) {
 
-                    var o = require(path.isAbolute(p) ?
+                    var o = require(path.isAbsolute(p) ?
                         p :
                         require.resolve(path.join(process.cwd(), p.trim())));
 
