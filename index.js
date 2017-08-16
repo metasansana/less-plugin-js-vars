@@ -38,7 +38,7 @@ JSVarsPlugin.prototype = {
                 .map(function map_paths(p) {
 
                     var o = require(path.isAbsolute(p) ?
-                        p :
+                        p.trim() :
                         require.resolve(path.join(process.cwd(), p.trim())));
 
                     if (typeof o !== 'object') {
