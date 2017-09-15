@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-js-vars",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "A less css plugin that let's use js vars all over the place.",
   "main": "index.js",
   "scripts": {
@@ -27,9 +27,7 @@
     "@quenk/polate": "^1.1.6"
   },
   "engines": {
-
-    "node":">=6.11.3",
+    "node": ">=6.11.3",
     "npm": ">=5.4.2"
-
   }
 }
