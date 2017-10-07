@@ -37,7 +37,7 @@ module.exports = {
 file.less:
 ```less
 
-.{{fruit}} {
+.__fruit__ {
 
    color: red;
 
