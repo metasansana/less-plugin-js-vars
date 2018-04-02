@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-js-vars",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A less css plugin that let's use js vars all over the place.",
   "main": "index.js",
   "scripts": {
