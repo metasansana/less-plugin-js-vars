@@ -14,7 +14,7 @@ VariablePreProcessor.prototype = {
         return polate(src, this.context, {
             start: '__',
             end: '__',
-            regex: '([\\w\$\.\-]+)',
+            regex: '([\\w\$\-]+)',
             leaveMissing: true
         });
 
