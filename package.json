@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-js-vars",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "description": "A less css plugin that let's use js vars all over the place.",
   "main": "index.js",
   "scripts": {
@@ -24,9 +24,7 @@
   },
   "homepage": "https://github.com/metasansana/less-plugin-js-vars#readme",
   "peerDependencies": {
-
     "less": "^3.8.0"
-
   },
   "dependencies": {
     "@quenk/polate": "^1.3.0"
