@@ -23,6 +23,11 @@
     "url": "https://github.com/metasansana/less-plugin-js-vars/issues"
   },
   "homepage": "https://github.com/metasansana/less-plugin-js-vars#readme",
+  "peerDependencies": {
+
+    "less": "^3.8.0"
+
+  },
   "dependencies": {
     "@quenk/polate": "^1.3.0"
   },
